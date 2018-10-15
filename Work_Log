@@ -133,5 +133,7 @@ Q: 在JDK11中使用ZGC
 A: -XX:+UnlockExperimentalVMOptions-XX:+UseZGC
 
 2018.10.15
-
+Q: 修改nginx配置
+A: 1、conf文件的server_name=*.quarkdata.com
+   2、指定配置文件重启：sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf -s reload
 

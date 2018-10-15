@@ -1,0 +1,508 @@
+  
+  2018.10.15
+  
+  679  /usr/local/nginx/sbin/nginx -t
+  680  /usr/local/nginx/sbin/nginx -s reload
+  681  tailf /usr/local/nginx/logs/access.log 
+  682  ps -ef | grep nginx
+  683  kill -9 78762 78763 78765 79115 79116
+  684  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  685  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  686  tailf /usr/local/nginx/logs/access.log 
+  687  vim  /usr/local/nginx/conf/nginx.conf
+  688  vim  /usr/local/nginx-bak/conf/nginx.conf
+  689  vim  /usr/local/nginx/conf/nginx.conf
+  690   /usr/local/nginx/sbin/nginx -s reload
+  691  vim  /usr/local/nginx/conf/nginx.conf
+  692  vim  /usr/local/nginx-bak/conf/nginx.conf
+  693  tailf   /usr/local/nginx-bak/logs/access.log 
+  694  vim  /usr/local/nginx-bak/conf/nginx.conf
+  695  vim  /usr/local/nginx/conf/nginx.conf
+  696  ps -ef| grep ngnix
+  697  ps -ef| grep nginx
+  698  vim  /usr/local/nginx/conf/nginx.conf
+  699  vim  /usr/local/nginx-bak/conf/nginx.conf
+  700  kill -9 79124 79125 79127 79149 79150
+  701  ps -ef| grep nginx
+  702  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  703  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  704  ps -ef| grep nginx
+  705  tailf ./nginx/logs/access.log 
+  706  tailf ./nginx-bak/logs/access.log 
+  707  ll -h ./nginx/logs/access.log 
+  708  ll -h ./nginx-bak/logs/access.log 
+  709  ssh root@192.168.204.6
+  710  ssh root@192.168.204.13
+  711  ssh root@192.168.204.13
+  712  cd /usr/local/nginx/conf/
+  713  cd ../
+  714  ll
+  715  vim ./nginx/conf/nginx.conf
+  716  ps -ef| grep nginx
+  717  ./nginx/sbin/nginx -t
+  718  kill -9 82583 82584 82586 82587 82588
+  719  ps -ef| grep nginx
+  720  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  721  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  722  ps -ef| grep nginx
+  723  vim ./nginx/conf/nginx.conf
+  724  vim ./nginx-bak/conf/nginx.conf
+  725  vim ./nginx/conf/nginx.conf
+  726  cd /usr/local/nginx-bak/
+  727  cd conf/
+  728  vim nginx.conf
+  729  cd ../../nginx/conf/
+  730  vim nginx.conf
+  731  cd ../logs
+  732  ls
+  733  tail -f access.log 
+  734  ssh root@192.168.204.10
+  735  exit
+  736  ll
+  737  scp root@192.168.204.10:~/thunderemm180920.sql ~/
+  738  ll
+  739  exit
+  740  ssh root@192.168.204.10
+  741  ssh trustdata@192.168.204.42
+  742  vim /usr/local/nginx/conf/nginx.conf
+  743  vim /usr/local/nginx-bak/conf/nginx.conf
+  744  /usr/local/nginx/sbin/nginx -t
+  745  tailf /usr/local/nginx-bak/conf/nginx.conf
+  746  vim /usr/local/nginx-bak/conf/nginx.conf
+  747  vim /usr/local/nginx/conf/nginx.conf
+  748  less /usr/local/nginx/logs/access.log 
+  749  less /usr/local/nginx-bak/logs/access.log 
+  750  tailf /usr/local/nginx-bak/logs/access.log 
+  751  tailf /usr/local/nginx-bak/logs/access.log  | grep quarkdata
+  752  tailf /usr/local/nginx-bak/logs/access.log  | grep verify
+  753  less /usr/local/nginx-bak/logs/access.log  | grep verify
+  754  vim /usr/local/nginx/conf/nginx.conf
+  755  cd /usr/local/nginx/conf/
+  756  vim nginx.conf
+  757  cd ../../nginx-bak/conf/
+  758  vim nginx.conf
+  759  cd ../../nginx/conf/
+  760  vim nginx.conf
+  761  ps -ef|grep nginx
+  762  kill -9 103672 103673 103706 103707 103708 
+  763  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  764  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  765  vim nginx.conf
+  766  pwd
+  767  cd ../../nginx-bak/conf/
+  768  vim nginx.conf
+  769  pw -ef|grep nginx
+  770  ps -ef|grep nginx
+  771  kill -9 9344293443 93449 93450 93451 
+  772  ps -ef|grep nginx
+  773  kill -9 93442 93443 94383
+  774  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  775  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  776  pwd
+  777  cd /usr/local/nginx/conf/
+  778  vim nginx.conf
+  779  ps -ef|grep nginx
+  780  kill -9 kill -9 122516 122517 122521 122522 122523 122893
+  781  ps -ef|grep nginx
+  782  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  783  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  784  ps -ef|grep nginx
+  785  vim /usr/local/nginx/conf/nginx.conf
+  786  vim /usr/local/nginx-bak/conf/nginx.conf
+  787  vim /usr/local/nginx/conf/nginx.conf
+  788  vim /usr/local/nginx-bak/conf/nginx.conf
+  789  vim /usr/local/nginx/conf/nginx.conf
+  790  vim /usr/local/nginx/sbin/nginx
+  791   /usr/local/nginx/sbin/nginx -t
+  792  vim /usr/local/nginx/conf/nginx.conf
+  793   /usr/local/nginx/sbin/nginx -t
+  794  ps -ef| grep nginx
+  795  kill -9 94386 94387 94389 94390  94391
+  796  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  797  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  798  ps -ef| grep nginx
+  799  less  /usr/local/nginx/logs/access.log 
+  800  tailf  /usr/local/nginx/logs/access.log 
+  801  vim  /usr/local/nginx/conf/nginx.conf
+  802  vim  /usr/local/nginx-bak/conf/nginx.conf
+  803  tailf   /usr/local/nginx-bak/logs/access.log 
+  804  vim  /usr/local/nginx-bak/conf/nginx.conf
+  805  vim  /usr/local/nginx/conf/nginx.conf
+  806  ps -ef | grep nginx
+  807  kill -9 122021  122022 122026 122027 122028
+  808  ps -ef | grep nginx
+  809  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  810  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  811  tailf   /usr/local/nginx-bak/logs/access.log 
+  812  vim  /usr/local/nginx-bak/conf/nginx.conf
+  813  vim  /usr/local/nginx/conf/nginx.conf
+  814  vim  /usr/local/nginx-bak/conf/nginx.conf
+  815  ps -ef | grep nginx
+  816  kill -9  http://127.0.0.1:7777;
+  817  kill -9  122400 122401 122405  122407 122406 
+  818  ps -ef | grep nginx
+  819  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  820  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  821  ps -ef | grep nginx
+  822  tailf   /usr/local/nginx-bak/logs/access.log 
+  823  ssh root@192.168.204.10
+  824  cd ~
+  825  ls
+  826  cd all/
+  827  ls
+  828  cd ..
+  829  cd all/
+  830  ls
+  831  cd ../
+  832  ll
+  833  mv emm_20180929.sql /home/samba/all/resources/document/
+  834  vim /opt/EMM/nginx-1.11.12/conf/nginx.conf 
+  835  vim /usr/local/nginx/conf/nginx.conf
+  836  rm /home/samba/all/resources/docume
+  837  exit
+  838  ifconfig
+  839  ssh quarkdata@192.168.204.10
+  840  ssh root@192.168.204.10
+  841  ssh quarkdata@192.168.204.10
+  842  ssh root@192.168.204.10
+  843  exit
+  844  ssh root@192.168.204.10
+  845  exit
+  846  vim /usr/local/nginx-bak/conf/nginx.conf
+  847  vim /usr/local/nginx/conf/nginx.conf
+  848  ps -ef | grep nginx
+  849  kill -9 122939 122940 122944 122945 122946 
+  850  ps -ef | grep nginx
+  851  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+  852  /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+  853  ps -ef | grep nginx
+  854  tailf /usr/local/nginx/logs/access.log 
+  855  tailf /usr/local/nginx
+  856  less /usr/local/nginx/logs/access.log 
+  857  less /usr/local/nginx-bak/logs/access.log 
+  858  vim /usr/local/nginx-bak/conf/nginx.conf
+  859  vim /usr/local/nginx/conf/nginx.conf
+  860  ll /opt/EMM/
+  861  vim /usr/local/nginx-bak/conf/nginx.conf
+  862  vim /usr/local/nginx/conf/nginx.conf
+  863  cd pwd
+  864  pwd
+  865  vim /usr/local/nginx/conf/nginx.conf
+  866  vim /etc/samba/smb.conf 
+  867  cd /home/samba/all/resources/apkStore/100085/Android/
+  868  ls
+  869  ll 
+  870  mv ./com.quarkdata.launcher_EMMLauncher_3.0.22.apk ./com.quarkdata.launcher_EMMLauncher_3.0.22.apk.back
+  871  ll
+  872  cd ../
+  873  ssh root@192.168.204.14
+  874  ls
+  875  ssh root@192.168.204.10
+  876  vim /usr/local/nginx-bak/conf/nginx.conf
+  877  vim /usr/local/nginx/conf/nginx.conf
+  878  vim /usr/local/nginx-bak/conf/nginx.conf
+  879  vim /usr/local/nginx/conf/nginx.conf
+  880  ssh root@192.168.204.10
+  881  vim /usr/local/nginx/conf/nginx.conf
+  882  vim /usr/local/nginx-bak/conf/nginx.conf
+  883  ll /usr/local/nginx-bak/conf/
+  884  cat /usr/local/nginx-bak/conf/server.key 
+  885  cat /usr/local/nginx-bak/conf/server.cer 
+  886  ssh root@192.168.204.10
+  887  exit
+  888  ssh root@192.168.204.10
+  889  ls
+  890  cd all/
+  891  ls
+  892  cd ../
+  893  vim /etc/samba/smb.conf 
+  894  ssh root@192.168.204.10
+  895  cd /home/samba/all/resources/apkStore/100085/Android/
+  896  ls
+  897  ll
+  898  mv com.quarkdata.launcher_EMMLauncher_3.0.21.apk ./com.quarkdata.launcher_EMMLauncher_3.0.21.apk.back
+  899  cd ../../
+  900  cd ../
+  901  cd resources/apkStore/100090/Android/
+  902  ls
+  903  ll
+  904  mv ./com.quarkdata.launcher_EMMLauncher_3.0.22.apk ./com.quarkdata.launcher_EMMLauncher_3.0.22.apk.back
+  905  ssh quarkdata@192.168.204.10
+  906  ssh root@192.168.204.10
+  907  cd /usr/local/
+  908  ll
+  909  cd nginx-bak/
+  910  ll
+  911  cd conf/
+  912  ll
+  913  vim nginx.conf
+  914  ll
+  915  cd ..
+  916  ll
+  917  cd sbin/
+  918  ./nginx -tc ../conf/nginx.conf
+  919  pwd
+  920  ./nginx -tc ../conf/nginx.conf
+  921  ./nginx -tc /usr/local/nginx-bak/conf/nginx.conf
+  922  history | grep nginx
+  923  ./nginx -c  /usr/local/nginx-bak/conf/nginx.conf  -s reload
+  924  cd ..
+  925  cd conf/nginx.conf
+  926  vim conf/nginx.conf
+  927  ./nginx -c  /usr/local/nginx-bak/conf/nginx.conf  -s reload
+  928  cd ../sbin/
+  929  ll
+  930  cd ..
+  931  ll
+  932  cd nginx-bak/
+  933  ll
+  934  cd sbin/
+  935  ll
+  936  ./nginx -c  /usr/local/nginx-bak/conf/nginx.conf  -s reload
+  937  cd ..
+  938  ll
+  939  cd nginx
+  940  ll
+  941  cd conf/
+  942  ll
+  943  vim nginx.conf
+  944  cd ..
+  945  cd nginx-bak/
+  946  ll
+  947  cd conf/
+  948  ll
+  949  vim nginx.conf
+  950  cd ../sbin/
+  951  ./nginx -c  /usr/local/nginx-bak/conf/nginx.conf  -s reload
+  952  exit
+  953  ssh root@192.168.204.15
+  954  ll
+  955  cd ~
+  956  ll
+  957  cd all
+  958  ll
+  959  cd ..
+  960  ll
+  961  cp ~/push.zip /home/samba/all/resources/document/
+  962  exit
+  963  ll
+  964  cd /home/samba/all/resources/document/
+  965  ll
+  966  rm push.zip 
+  967  exit
+  968  ssh root@192.168.204.13
+  969  cd /usr/local/
+  970  ll
+  971  cd nginx-bak/
+  972  ll
+  973  pwd
+  974  ll
+  975  cd conf/
+  976  ll
+  977  vim nginx.conf
+  978  cd ../sbin/
+  979  ./nginx -tc /usr/local/nginx-bak/conf/nginx.conf
+  980  ./nginx -c /usr/local/nginx-bak/conf/nginx.conf -s reload
+  981  cd ..
+  982  vim  conf/nginx.conf
+  983  cd /usr/local/nginx/conf/
+  984  ll
+  985  vim nginx.conf
+  992  scp quarkdataservices.zip root@192.168.204.13:/opt/EMM/Trust/apache-tomcat-7.0.76/webapps/
+  993  ll
+  994  cd nginx/conf/
+  995  vim nginx.conf
+  996  ll
+  997  cd /usr/local/
+  998  ll
+  999  scp quarkdataservices.zip root@192.168.204.13:/opt/EMM/Trust/apache-tomcat-7.0.76/webapps/
+ 1000  ssh root@192.168.204.10
+ 1001  ll
+ 1002  cd /usr/local/
+ 1003  ls
+ 1004  cd nginx-bak/
+ 1005  ll
+ 1006  cd conf
+ 1007  ll
+ 1008  vim nginx.conf
+ 1009  cd /home/
+ 1010  ll
+ 1011  cd thunder/
+ 1012  ll
+ 1013  unzip quarkdata.zip 
+ 1014  ll
+ 1015  cd /usr/local/
+ 1016  cd nginx-bak/
+ 1017  ls
+ 1018  cd conf/
+ 1019  ls
+ 1020  vim nginx.conf
+ 1021  vim /home/thunder/index.html 
+ 1022  vim nginx.conf
+ 1023  cd ..
+ 1024  ls
+ 1025  nginx -c conf/nginx.conf
+ 1026  cd sbin/
+ 1027  ls
+ 1028  nginx -c ../conf/nginx.conf
+ 1029  cd nginx 
+ 1030  nginx
+ 1031  clear
+ 1032  nginx restart
+ 1033  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+ 1034  cd ..
+ 1035  ls
+ 1036  cd conf
+ 1037  vim nginx.conf
+ 1038  /usr/local/nginx-bak/sbin/nginx -t /usr/local/nginx-bak/conf/nginx.conf
+ 1039  vim nginx.conf
+ 1040  /usr/local/nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+ 1041  ps -ef | grep nginx
+ 1042  cd ..
+ 1043  ll
+ 1044  sbin/nginx -s reload
+ 1045  ll
+ 1046  cd logs/
+ 1047  ll
+ 1048  cat error.log 
+ 1049  ll
+ 1050  echo > access.log 
+ 1051  ll
+ 1052  echo > error.log 
+ 1053  ll
+ 1054  tailf access.log 
+ 1055  cd ..
+ 1056  ll
+ 1057  vim conf/nginx.conf
+ 1058  vim logs/error.log 
+ 1059  vim logs/access.log 
+ 1060  tailf logs/access.log 
+ 1061  ll
+ 1062  ipconfig
+ 1063  ifconfig
+ 1064  llll
+ 1065  ll
+ 1066  cd logs/
+ 1067  ll
+ 1068  tailf access.log 
+ 1069  tailf access.log |grep "GET / HTTP/1.1"
+ 1070  cd ..
+ 1071  cat conf/nginx.conf
+ 1072  ll /home/thunder/
+ 1073  ll
+ 1074  ll /home/
+ 1075  ll /home/thunder/
+ 1076  cd ..
+ 1077  ll
+ 1078  cd nginx-bak/
+ 1079  ll
+ 1080  vim conf/nginx.conf
+ 1081  sbin/nginx -s reload
+ 1082  ll logs/
+ 1083  cat logs/error.log 
+ 1084  tailf logs/error.log 
+ 1085  ps -ef|grep nginx
+ 1086  kill -9 109905
+ 1087  ps -ef|grep nginx
+ 1088  top
+ 1089  ps -ef|grep nginx
+ 1090  sbin/nginx -s stop
+ 1091  kill -9 109901
+ 1092  ps -ef|grep nginx
+ 1093  kill -9 106737
+ 1094  kill -9 106736
+ 1095  kill -9 7017
+ 1096  ps -ef|grep nginx
+ 1097  sbin/nginx stop
+ 1098  sbin/nginx 
+ 1099  ps -ef|grep nginx
+ 1100  ll logs/
+ 1101  vim logs/error.log 
+ 1102  vim logs/access.log 
+ 1103  curl http://localhost
+ 1104  cat conf/nginx.conf
+ 1105  curl http://localhost/
+ 1106  curl http://127.0.0.1/
+ 1107  vim conf/nginx.conf
+ 1108  sbin/nginx -s reload
+ 1109  ps -ef|grep nginx
+ 1110  cd ..
+ 1111  cd nginx
+ 1112  ll
+ 1113  cat conf/nginx.conf
+ 1114  sbin/nginx 
+ 1115  cd ..
+ 1116  ll
+ 1117  nginx-bak/sbin/nginx -s stop
+ 1118  ps -ef|grep nginx
+ 1119  nginx/sbin/nginx 
+ 1120  ps -ef|grep nginx
+ 1121  nginx-bak/sbin/nginx 
+ 1122  cat nginx-bak/conf/nginx.conf
+ 1123  nginx-bak/sbin/nginx nginx-bak/conf/nginx.conf
+ 1124  nginx-bak/sbin/nginx -h
+ 1125  nginx-bak/sbin/nginx -c nginx-bak/conf/nginx.conf
+ 1126  nginx-bak/sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+ 1127  ps -ef|grep nginx
+ 1128  cat nginx-bak/conf/nginx.conf
+ 1129  tailf nginx-bak/logs/access.log 
+ 1130  cd nginx-bak/
+ 1131  vim conf/nginx.conf
+ 1132  sbin/nginx -s reload
+ 1133  tailf logs/access.log 
+ 1134  cat conf/nginx.conf
+ 1135  vim conf/nginx.conf
+ 1136  sbin/nginx -s reload
+ 1137  tailf logs/access.log 
+ 1138  vim conf/nginx.conf
+ 1139  sbin/nginx -s reload
+ 1140  vim logs/error.log 
+ 1141  tailf logs/access.log | grep "GET / HTTP/1.1"
+ 1142  vim conf/nginx.conf
+ 1143  sbin/nginx -s reload
+ 1144  vim conf/nginx.conf
+ 1145  sbin/nginx -s reload
+ 1146  ps -ef|grep nginx
+ 1147  sbin/nginx -s stop
+ 1148  ps -ef|grep nginx
+ 1149  sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+ 1150  ps -ef|grep nginx
+ 1151  kill -9 107178
+ 1152  kill -9 107179
+ 1153  ps -ef|grep nginx
+ 1154  sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+ 1155  cat /usr/local/nginx-bak/conf/nginx.conf
+ 1156  vim conf/nginx.conf
+ 1157  ps -ef|grep nginx
+ 1158  kill -9 107879 107880
+ 1159  ps -ef|grep nginx
+ 1160  sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+ 1161  cd ..
+ 1162  nginx/sbin/nginx 
+ 1163  cd nginx
+ 1164  ll
+ 1165  cat conf/nginx.conf
+ 1166  tailf logs/access.log 
+ 1167  ll
+ 1168  cd ..
+ 1169  ls
+ 1170  cd nginx-bax
+ 1171  cd /usr/local/nginx-bak/
+ 1172  ls
+ 1173  cd conf/
+ 1174  vim nginx.conf
+ 1175  cd /usr/local/nginx/
+ 1176  ls
+ 1177  cd conf/
+ 1178  vim nginx.conf
+ 1179  cd /usr/local/nginx-bak/
+ 1180  ll
+ 1181  cd conf/
+ 1182  vim nginx.conf
+ 1183  cd ..
+ 1184  sbin/nginx -s reload
+ 1185  vim nginx.conf
+ 1186  vim conf/nginx.conf
+ 1187  sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf
+ 1188  sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf -s reload
+ 1189  history
