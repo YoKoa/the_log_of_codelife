@@ -1,0 +1,29 @@
+2018.8.27
+
+D: 查看数据表中行具体信息
+E: show full columns from ;
+M: 
+
+D: 修改数据表中行的排序规则
+E: ALTER TABLE `onespace`.`department` 
+   CHANGE COLUMN `name` `name` VARCHAR(200) CHARACTER 
+   SET 'utf8' COLLATE 'utf8_general_ci' 
+   NOT NULL ;
+M: 
+
+D: 查看SQL语句解析
+E: EXPLAIN SQL；
+
+2018.8.28
+D: 查看MySQL运行时信息
+E: show status;
+M: 
+
+D: 查看MySQL服务器配置
+E: show variables;
+M: 
+
+2018.8.29、
+D: 备份数据库数据和表结构
+E: mysqldump dbname
+M: 

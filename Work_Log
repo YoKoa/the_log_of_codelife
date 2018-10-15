@@ -1,0 +1,137 @@
+2018.8.27
+Q: tomcat解析cookies异常
+A: 1. Edit the Tomcat/conf/content.xml 
+   2. Add the statement in betweeen the <context> and </context> tags: <CookieProcessor className="org.apache.tomcat.util.http.LegacyCookieProcessor" /> 
+   3. Restart Tomcat.
+Q: 项目中httputil中的doPostJson、doPost、doPostAjax
+A: 涉及到了请求的编码问题，也就是header中的content-type部分，该处表明了请求发送方和接受方处理此请求的便解码方式，主要有如下几种：
+   1、Content-Type: application/x-www-form-urlencoded，默认如此，参数以键值对形式存放，Spring中可用@param等接受。
+   2、Content-Type: application/json（xml），参数存放在请求体中，可用@requestbody解码
+
+2018.8.28
+Q: 在debug进入项目的情况下，使用postman请求接口的响应码为406
+A: 1、406的含义：请求中包含Accept头，意为请求方可以处理的数据格式，当服务器发现请求方没有该header的时候会返回406,但是请求方为浏览器的时候能够处理任何格式，故只有postman或者消费者有此情况出现
+   2、解决方式：在spring mvc中配置消息转换器，添加默认的请求参数
+
+2018.8.29
+Q: 302在单点登录中的使用
+A: 在跨域的单点登录设计中，使用302、303、307来完成认证中心和客户端之间的跳转。
+   1、302、303、307的含义
+
+Q: 各种场景下的登录凭证方案
+A: null
+2018.8.31
+Q: Gerrit使用git push origin branch报错
+A: 使用git push gerrit HEAD:refs/for/master
+
+Q: 在spring boot重要
+A: 使用undertow作为spring boot内嵌服务器
+   配置jvm参数： java -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -Xms1024m -Xmx1024m -Xmn256m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC -jar /jar包路径 
+
+Q: 了解进程运行情况
+A: 使用jinfo查看JVM参数，使用jconsole可视化进程参数
+
+2018.9.03
+Q: spring无法自动注入静态bean
+A: 1、添加非静态setter方法
+   2、设置setter方法为@Autowire
+   注：此方法用来整合旧系统，不建议使用
+
+Q: 在idea中倒入本地jar包，无法生成到lib中，报classnotfound异常
+A: 将jar包推送到maven私服上
+
+2018.9.04
+Q: 关闭spring boot项目
+A: curl -X POST host:port/shutdown
+
+2018.9.05
+Q: 单点登录302在前后段分离，使用ajax调用重定向请求时，302重定向失败，页面未刷新
+A: ajax的异步数据会导致302失败，疑似ajax不会刷新页面，只能局部刷新
+   涉及到302的请求全部使用location发起
+
+2018.9.06
+Q: 没有长进
+
+2018.9.07
+Q: 关于抽象工厂模式和静态工厂方法在接口可扩展性的使用
+A: 
+
+2018.9.11
+Q: 在枚举类中添加静态方法时，报错
+A: 需要在枚举的属性后添加分号，如果没有属性也要添加分号
+    public enum SelfTest {
+        ;
+        public static void create() {
+            System.out.println("hello");
+        }
+    }
+Q: 简单处理代码中if-else过多情况
+A: 使用表格驱动法
+   Map<String, Function> actionTable = new HashMap<>();
+   actionTable.put("test1", this::doAction1);
+   actionTable.put("test6", this::doAction2);
+   actionTable.put("test5", this::doAction3);
+   actionTable.put("test4", this::doAction4);
+   actionTable.put("test3", this::doAction5);
+   actionTable.get(params).apply(params);
+
+2018.9.12
+Q: npm安装报证书不可信error
+A: npm config set strict-ssl false
+
+Q: ubuntu 环境下node安装日志
+A: https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributionshttps://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+   ## Run `sudo apt-get install -y nodejs` to install Node.js 8.x LTS Carbon and npm
+   ## You may also need development tools to build native addons:
+        sudo apt-get install gcc g++ make
+   ## To install the Yarn package manager, run:
+        curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+        echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+        sudo apt-get update && sudo apt-get install yarn
+   /usr/bin/npm -> /usr/lib/node_modules/npm/bin/npm-cli.js
+   /usr/bin/npx -> /usr/lib/node_modules/npm/bin/npx-cli.js
+   /home/zhangzhen/DevTools/node_path/node_global/lib/node_modules/@angular/cli/bin/ng
+
+2018.9.13
+Q: 今天回想起一个问题，就是使用volatile修饰数组，会不会对其中元素产生影响
+A: 使用volatile修饰数组，修改其中元素，和将其指向新的数组。
+   0 aload_0
+   1 getfield #2 <com/zhang/jmh/volatileTest.primes>
+   4 iconst_1
+   5 iconst_5
+   6 iastore
+   7 aload_0
+   8 bipush 56
+   10 newarray 10 (int)
+   12 putfield #2 <com/zhang/jmh/volatileTest.primes>
+   15 return
+
+2018.9.19
+Q: POST和GET参数中汉字编码问题
+
+2018.9.27
+Q: ubuntu查看网关
+A: ip route show
+
+2018.10.10
+Q: 从Object强转成Integer报类型转换异常
+A: 对象之间的强制转换只转换引用，不改变内存中的对象实例
+   子类是父类的加强，所以可以强转成父类，但内存中还是子类的数据
+   父类不一定能强转成子类，如果父类的引用指向的是父类的对象，就会报classcast
+
+Q: 添加日志，完善异常
+
+
+2018.10.11
+Ｑ: 日志使用slf4j,绑定具体实现
+
+2018.10.12
+Q: 使用log4j打印MyBatis SQL语句
+A: 引入log4j和jdbc的pom，然后在日志的配置中配置MyBatis和jdbc项
+
+Q: 在JDK11中使用ZGC
+A: -XX:+UnlockExperimentalVMOptions-XX:+UseZGC
+
+2018.10.15
+
+
