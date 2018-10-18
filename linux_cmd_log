@@ -1,4 +1,31 @@
   
+2018.10.17
+
+
+tar -zcf /opt/EMM/back/emm_server_back.tar.gz
+#####   '-' 注意中英文
+zip -qr ThundersoftMDMWeb_bak.zip ThundersoftMDMWeb/     
+zip -qr ThundersoftMDMWeb_bak.zip ThundersoftMDMWeb/
+
+cp -f app.xml server.cfg.properties spring-common.xml /opt/EMM/Trust/apache-tomcat-7.0.76/webapps/ThundersoftMDMWeb/WEB-INF/classes
+cp -f myCA.cer server.key myCA.key server.cer iOSFlag.cer /opt/EMM/Trust/apache-tomcat-7.0.76/webapps/ThundersoftMDMWeb/resources/assets/certs
+cp  kaihuFile.html jquery.js /opt/EMM/Trust/apache-tomcat-7.0.76/webapps/ThundersoftMDMWeb
+
+
+### tomcat的守护进程
+kill -9 `pgrep Check_Tomcat.sh`
+
+### 手动解压war包
+jar -xvf
+  
+  
+  
+  
+  
+  
+  
+  
+  
   2018.10.15
   
   679  /usr/local/nginx/sbin/nginx -t

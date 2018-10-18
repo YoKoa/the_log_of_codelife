@@ -137,3 +137,13 @@ Q: 修改nginx配置
 A: 1、conf文件的server_name=*.quarkdata.com
    2、指定配置文件重启：sbin/nginx -c /usr/local/nginx-bak/conf/nginx.conf -s reload
 
+2018.10.16
+Q: Spting 中文乱码
+A: <mvc:annotation-driven>
+    <mvc:message-converters register-defaults="true">
+        <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+            <property name="supportedMediaTypes" value="text/html;charset=UTF-8"></property>
+        </bean>
+    </mvc:message-converters>
+   </mvc:annotation-driven>
+
