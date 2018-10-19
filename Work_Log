@@ -147,3 +147,7 @@ A: <mvc:annotation-driven>
     </mvc:message-converters>
    </mvc:annotation-driven>
 
+2018.10.19
+Q: tomcat8.5和spring容易在spring session写cookies时造成domain无效异常
+A: 在conf/context.xml中添加cookiespoccessor为遗留处理器
+
