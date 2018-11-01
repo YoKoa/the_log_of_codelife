@@ -19,7 +19,9 @@ A: 在跨域的单点登录设计中，使用302、303、307来完成认证中�
    1、302、303、307的含义
 
 Q: 各种场景下的登录凭证方案
-A: null
+A: 主要是移动端单点登录
+   1）一是可以自己开发会话，登录接口直接调用认证中心获取TGT，然后换取ST得到资源访问权限
+   2）对于业务不复杂的可以使用Redis简单实现设备ID和Token的会话共享
 2018.8.31
 Q: Gerrit使用git push origin branch报错
 A: 使用git push gerrit HEAD:refs/for/master
@@ -181,9 +183,17 @@ A: 1）代码格式化模板配置，
    6）配置clean up
    7）保存时自动排版
 Q: 对于低级编码和回归不过有记录在案（很好的做法）
-
-
-
+Q: 异步的使用
+A: 在可能发生阻塞的地方必须使用异步，例如接口调用、资源获取、数据查询等
+   1）使用Vertx异步回调，示例
+   2）使用Vertx的worker，避免线程切换耗费
+Q: 认证中心实现尽可能使用openID的开源实现，并在其上进行定制开发
+A： https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server
+Q: 慎用String对象
+A: 1）一个对象由对象头、类型指针和实例数据组成，
+   2）对象头是固定4bytes，32位的指针也是4bytes，64位的指针则是8bytes，所以当内存不超过32G的时候尽量开启指针压缩
+   3）指针压缩后一个对象最少8bytes，向Int占用4bytes，一个int对象就是4+4+4bytes
+   4）而一个String占用40字节
 
 
 
