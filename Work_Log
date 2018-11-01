@@ -151,3 +151,39 @@ A: <mvc:annotation-driven>
 Q: tomcat8.5和spring容易在spring session写cookies时造成domain无效异常
 A: 在conf/context.xml中添加cookiespoccessor为遗留处理器
 
+2018.10.29
+Q: 打印日志不允许使用+拼接，必须使用占位符
+Q: 调用远程接口的地方必须使用try-catch包裹
+Q: 字符串操作建议使用apache的StringUtils，这是出于性能考虑
+Q: 打印异常必须打印调用栈
+
+2018.10.30
+Q: 日志不应该打印太长
+
+2018.10.31
+Q: JVM参数xmx和xms是否设置一致
+A: 将xmx和xms设置一致可以让JVM在启动的时候直接向OS申请xmx的commite内存，这样好处是：
+   1）避免运行中申请内存，
+   2）延后启动后首次GC时间，
+   3）减少初期GC次数，
+   4）尽可能避免使用swap space
+Q: 关于存储式业务和流式业务在上诉两个参数的设置选择
+A: 流式业务应正常设置，即xmx为系统内存的0.8，xms不等于xmx，并设为系统稳定后的内存用量 
+Q: xmx不要太大，容易将整个java堆置换
+
+2018.11.01
+Q: 开发工具eclipse配置问题，即如何提高生产力
+A: 1）代码格式化模板配置，
+   2）代码注释模板配置
+   3）Findbugs静态检查配置
+   4）替换checkstyle规则集
+   5）配置workspace字符编码
+   6）配置clean up
+   7）保存时自动排版
+Q: 对于低级编码和回归不过有记录在案（很好的做法）
+
+
+
+
+
+
