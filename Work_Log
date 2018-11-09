@@ -196,4 +196,8 @@ A: 1）一个对象由对象头、类型指针和实例数据组成，
    4）而一个String占用40字节
 
 
-
+https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.vm.80.doc/docs/j9_defaults.html
+https://www.ibm.com/support/knowledgecenter/en/SS4QMC_9.3.0/com.ibm.help.vm.bestpractices.doc/c_VM_AdjustingJVMMemorySettings.html
+https://www.ibm.com/developerworks/cn/java/j-lo-jvm-optimize-experience/index.html]
+https://blog.csdn.net/chluknight/article/details/6689323
+						     =====>     JVM相关
