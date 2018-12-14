@@ -195,9 +195,12 @@ A: 1）一个对象由对象头、类型指针和实例数据组成，
    3）指针压缩后一个对象最少8bytes，向Int占用4bytes，一个int对象就是4+4+4bytes
    4）而一个String占用40字节
 
-
-https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.vm.80.doc/docs/j9_defaults.html
-https://www.ibm.com/support/knowledgecenter/en/SS4QMC_9.3.0/com.ibm.help.vm.bestpractices.doc/c_VM_AdjustingJVMMemorySettings.html
-https://www.ibm.com/developerworks/cn/java/j-lo-jvm-optimize-experience/index.html]
-https://blog.csdn.net/chluknight/article/details/6689323
-						     =====>     JVM相关
+2018.12.13
+Q: JVM调整
+A: https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.vm.80.doc/docs/j9_defaults.html
+   https://www.ibm.com/support/knowledgecenter/en/SS4QMC_9.3.0/com.ibm.help.vm.bestpractices.doc/c_VM_AdjustingJVMMemorySettings.html
+   https://www.ibm.com/developerworks/cn/java/j-lo-jvm-optimize-experience/index.html]
+   https://blog.csdn.net/chluknight/article/details/6689323
+						    
+2018.12.14
+Q:(过时)在不使用Maven的情况下，配置web项目，注意Alt+Shift+Ctrl+S中的各个配置：ApplicationContext、Artif....
